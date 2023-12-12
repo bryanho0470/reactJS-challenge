@@ -20,6 +20,7 @@ const Button = styled.span`
   cursor: pointer;
   &:hover {
     opacity: 0.8;
+  }
 `;
 
 const Logo = styled.img`

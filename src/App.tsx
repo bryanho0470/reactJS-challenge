@@ -9,6 +9,7 @@ import Layout from "./components/layout";
 import Home from "./routes/home";
 import Login from "./routes/login";
 import CreateAccount from "./routes/create-account";
+import Profile from "./routes/profile";
 
 const router = createBrowserRouter([
   {
@@ -18,7 +19,10 @@ const router = createBrowserRouter([
         <Layout />
       </ProtectedRoute>
     ),
-    children: [{ path: "", element: <Home /> }],
+    children: [
+      { path: "", element: <Home /> },
+      { path: "profile", element: <Profile /> },
+    ],
   },
   {
     path: "/login",
@@ -39,7 +43,7 @@ body {
   background-color: #FF5D9D ;
   color:white;
   font-family: system-ui, -apple-system, BlinkmacSystemfont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
-}
+
 `;
 
 const Wrapper = styled.div`
