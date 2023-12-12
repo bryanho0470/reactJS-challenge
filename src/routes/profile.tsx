@@ -151,7 +151,7 @@ export default function Profile() {
         type="file"
         accept="image/*"
       />
-      <Name>{user?.displayName ?? "Anonymous"}</Name>
+      <Name>{user?.displayName ?? modifyname ?? "Anonymous"}</Name>
       <Button onClick={onButtonClick}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
