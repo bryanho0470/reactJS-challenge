@@ -6,14 +6,12 @@ import { deleteObject, ref } from "firebase/storage";
 
 const Wrapper = styled.div`
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  margin: 5px 20px;
+  flex-wrap: wrap;
   padding: 20px;
-  border: 1px solid black;
-  border-radius: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
   background-color: rgba(0, 0, 0, 0.2);
-  width: 300px;
+  width: 100%;
 `;
 
 const Column = styled.div``;
